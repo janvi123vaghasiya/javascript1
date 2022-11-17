@@ -47,6 +47,7 @@ var items= document.querySelectorAll("#list li");
            
 
 // FIND  PROFIT AND MARGIN
+// functon
 function amount(){
     var price=document.getElementById('price').value;
     var dollar=document.getElementById('dollar').value;
