@@ -1,0 +1,785 @@
+*{
+    box-sizing: border-box;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+img{
+  max-width: 100%;
+}
+header{
+  width: 100%;
+  background-color:white;
+  border-bottom: 1px solid lightgray;
+  position: relative;
+}
+
+
+
+.main_header{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0 10px 0 15px;
+}
+
+
+
+.rel{
+  position:relative;
+  margin:10px 0;
+}
+.rel i{
+position: absolute;
+top: 50%;
+left: 8px;
+transform: translateY(-50%);
+}
+.rel input{
+padding-left: 35px;
+background-color:whitesmoke;
+border:1px solid lightgray;
+height:30px;
+border-radius:4px;
+width:100%;
+
+}
+.end{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.end h2{
+  font-size: 12px;
+  margin-left: 8px;
+}
+.end span{
+  border-radius: 50px;
+  background-color: pink;
+  font-size:12px;
+  text-align: center;
+  padding: 5px;
+  
+  
+}
+
+h1{
+  font-size: 15px;
+  padding-left: 20px;
+}
+ 
+
+.nav{
+    float: left;
+    overflow-y: scroll;
+    height:700px;
+    background-color:whitesmoke;
+    border:1px solid rgb(222, 222, 228);
+   
+
+}
+ul{
+    list-style-type:none;
+    padding-left:15px;
+    font-size:15px;
+    line-height:25px;
+}
+ul li{
+    font-size:15px;
+    line-height: 30px;
+    font-family: sans-serif;
+    
+}
+ul i{
+    margin-right:7px;
+}
+.d1{
+    display: none;
+}
+.nav1{
+    display: none;
+    background-color:  lavender;
+    width:100%;
+    z-index: 4;
+}
+
+.item1{
+    padding-left:5px;
+    display: flex;
+    margin-left:14px;
+}
+.item_001{
+    display: flex;
+    font-size: 13px;
+    
+    color:rgb(123, 123, 123);
+   
+}
+.icon{
+  display: flex;
+  justify-content: end;
+  padding-right:5px;
+  margin-left:20px;
+}
+.icon1{
+    padding-left:20px;
+    color:black;
+    font-size:13px;
+    display: flex;
+    justify-content: end;
+}
+.h1{
+    margin-left:15px;
+}
+.item{
+    padding-left:25px ;
+    display: none;
+    position: absolute;
+    font-size: 13px;
+}
+
+.dropdown:hover .item{
+    display: block;
+}
+.dropdown p:hover{
+    color:darkgreen;
+    background-color:  rgb(237, 234, 234);
+}
+.main_center{
+  overflow-y: scroll;
+  height:700px;
+}
+.center{
+    background-color:whitesmoke;
+    border-right: 1px solid rgb(222, 222, 228);
+    height:700px;
+   
+    
+}
+.all{
+    width: 70%;
+    margin:  25px auto;
+    
+  }
+.b1{
+    font-size:13px;
+    display: flex;
+    
+
+    color:rgb(123, 123, 123);
+}
+.icon2{
+    padding-left: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+   
+  }
+.b2 {
+    display: flex;
+    border: 1px solid lightgrey;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 13px;
+   
+}
+
+.li2 {
+    color:rgb(123, 123, 123);
+    font-size:13px;
+    display: flex;
+
+    margin-top:8px;
+
+    
+}
+.b3 {
+    
+    margin-top: 2px;
+    display: flex;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 15px;
+   
+    
+}
+.text1{
+    margin-left:10px;
+}
+.text2{
+    
+    width: 50%;
+    margin: 5px;
+    
+    padding:6px;
+      
+}
+.text2 .icon3{
+    padding-left: 10px;
+    display: flex;
+}
+.text2 .ord{
+    padding-top:5px;
+   
+    font-size: 13px;
+    font-family: sans-serif;
+ 
+    
+}
+.text3{
+    width: 50%;
+  }
+  .text3 i{
+    display: flex;
+    padding-right: 10px;
+    justify-content: end;
+    margin-top: 13px;
+   
+   
+  }
+  .b4 {
+   
+    display: flex;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    font-size:13px;
+    width:100%;
+    margin-top: 2px;
+    
+   
+
+  }
+  .text4{
+    display: flex;
+  }
+  video{
+    float: left;
+   object-fit: cover;
+   width:210;
+  }
+  .text5{
+    margin: 8px;
+  
+    
+ }
+ .text5 .one {
+   display: block;
+   margin-left: 5px;
+   font-weight: bold;
+   font-size: 16px;
+ }
+  .text5 .two{
+    display: block;
+    margin-left: 5px;
+    margin-top: 4px;
+  }
+  .three button  {
+    margin-left: 3px;
+    margin-top: 10px;
+    background-color: white;
+    border:1px solid rgb(196, 196, 196);
+    border-radius: 3px;
+    height:30px;
+  }
+  .b5{
+    display: flex;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    font-size:13px;
+    width:100%;
+    margin-top: 2px;
+  }
+  .text6{
+    display: flex;
+  }
+  .text7{
+    margin: 8px;  
+  }
+  .text7 .tone {
+    display: block;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 15px;    
+  }
+  .text7 .ttwo{
+    display: block;
+    margin-left: 5px;
+    margin-top: 4px;
+    font-size:13px;
+  }
+  .tthree button {
+    margin-left: 3px;
+    margin-top: 10px;
+    background-color: white;
+    border:1px solid rgb(196, 196, 196);
+    border-radius: 3px;
+    height:30px;
+  }
+  .b6{
+    display: flex;
+    border: 1px solid lightgray;
+    background-color: white;
+    border-radius: 10px;
+    font-size:13px;
+    width:100%;
+    margin-top: 20px;
+  }
+  .text8{
+    width:100%;
+  }
+  .bone{
+    display: flex;
+    margin-left: 10px;
+    font-size:15px;
+  }
+  .btwo{
+    display: flex;
+    margin-left:10px;
+    margin-top:2px;
+    font-size: 13px;
+  }
+  .bthree button {
+    margin-left: 3px;
+    background-color: white;
+    border:1px solid rgb(196, 196, 196);
+    border-radius: 3px;
+    height:30px;
+  }  
+  .right{
+    border-left: 1px solid lightgray;
+  }
+  .text9{
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    padding:12px; 
+  }
+  .text9 .list{
+    display: none;
+    margin-left:20px;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 2px 2px 2px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top:1px;
+  }
+  .text9 .list li:hover{
+    background-color: rgb(232, 232, 250);
+  }
+  .text9 .btn:hover + .list {
+    display: block;
+    background-color:white ;
+    position: absolute;
+    width: 100px;
+    margin: 0;
+    width: 100%;
+  }
+  .text9 .btn2{
+    margin-left:10px ;
+  }
+  .dropdown1 {
+    position: relative;
+    display: inline-block;
+    width:50%;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .list li{
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+  button{
+    display: inline-block;
+    margin-right:7px;
+  }
+  .btn{
+    background-color: white;
+    border: 1px solid rgb(184, 184, 193);
+    border-radius: 3px;
+    margin:0;
+    height:30px;
+    width:100%;
+    display: inline-block;
+    margin-top:0;
+    margin-right: 10px;
+  }
+  .btn2{
+    background-color: white;
+    border: 1px solid rgb(184, 184, 193);
+    border-radius: 3px;
+    margin:0;
+    width:50%;
+    height:30px;
+  }
+  .r2{
+    padding: 0 10px 0 5px;
+    border-bottom: 1px solid lightgray;
+    font-size:13px;
+  }
+  .r2 .rone{
+    display: flex;
+    justify-content: right;
+  }
+  .r2 .rtwo{
+    padding-bottom: 10px;
+    }
+  .r3{
+    padding: 0 10px 0 5px;
+    border-bottom: 1px solid lightgray;
+    font-size:13px;
+  }
+  .r3 .rthree{
+    display: flex;
+    justify-content: right;
+  }
+  .r3 .rfour{
+    padding-bottom: 10px;     
+  }
+  .r4{
+    padding: 10px 10px 2px 5px;
+    border-bottom: 1px solid lightgray;
+    font-size:13px;
+  }
+  .r4 .rfive {
+    display: flex;
+    margin-bottom: -1.5%;       
+  }
+  .r4 .rsix{    
+    padding-top: 10px;
+  }   
+  .rfive .total{
+    display: flex;
+    font-weight: bold;
+    margin-top:2px;
+  }
+  .rfive .to{
+    margin:auto;
+    margin-right:0;         
+  }
+  .r5{
+    padding: 10px 10px 2px 5px;
+    border-bottom: 1px solid lightgray;
+    font-size:13px;
+  }
+  .r5 .rseven {
+    display: flex;
+    margin-bottom: -1.5%;
+  }
+  .r5 .reight{
+    padding-top: 10px;
+  }
+  .rseven .total{
+    display: flex;
+    font-weight: bold;
+    margin-top:2px;
+  }
+  .rseven .to{
+    margin:auto;
+    margin-right:0;
+  }      
+  .r6{
+    font-size: 13px;
+    padding-left:5px;
+  }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    
+.d1{
+  display: block;
+       
+}
+.img_01{
+  display: none;
+  visibility: hidden;
+}
+.end{
+  width: 16.66%;
+}
+.header_search{
+  width: 66.66%;
+} 
+.end h2{
+  display: none;
+    
+}
+.nav{
+  display: none;
+   
+}
+.d1:hover ~ .nav1{
+  display:block;
+  width: 30%;
+  position: absolute;
+  margin-top:94%;
+  margin-left:-15px;
+}
+.main_center{
+  width:100%;
+  
+}
+.text7{
+  display: block;
+  width:100%;
+}
+.text7 .tone{
+  font-size:8px;
+  margin-left: 3px;
+  display: block;
+}
+.li2{
+  font-size:8px;
+}
+.ord {
+  font-size:8px;
+  display: block;
+  padding-bottom: 5px;
+}
+.text3 i{
+  width:100%;
+  padding-right:5px;
+  margin-left:2px;
+  margin-top:15px;
+}
+video{
+  display: block;
+  flex-wrap: wrap;
+}
+.text5 .one{
+  font-size:10px;
+}
+.text5 .two{
+  font-size: 8px;
+}
+.three button{
+  font-size:8px;
+  height:20px;
+}
+.text5{
+  margin-left:2px;
+}
+.text5 .tone{
+  font-size:10px;
+}
+.text7 .ttwo{
+  font-size: 8px;
+}
+.tthree button{
+  font-size:8px;
+  height:20px;
+}
+.text7{
+  margin-left:2px;
+}
+.text8 .btwo{
+  margin-right:10px;
+}
+.bthree button{
+  margin-top:3px;
+  height:20px;
+}
+.right{
+  width:35%;
+}
+.text9{
+  padding:12px;
+}
+.dropdown1{
+  margin-right:5px;
+  
+}
+.text9 .btn2{
+  margin:0;
+}
+.text9 .btn:hover + .list {
+  display: block;
+  background-color:white ;
+  position: absolute;
+  margin: 0;
+  width: 100%;
+}
+.r2 .rtwo{
+  padding:0;
+}
+.r3 .rfour{
+  padding:0;
+}
+.rfive .total{
+  margin-bottom:2px;
+  margin-top:3px;
+  font-size:12px;
+  display: inline;
+  padding-right: 8px;
+ }
+ .r4 .rsix{
+  padding-top:15px;
+  padding:0;
+ }
+.rseven .total{
+  margin-bottom:2px;
+  margin-top:3px;
+  font-size:12px;
+ }
+ .r5 .reight{
+  padding-top:15px;
+ }
+ }
+
+ @media only screen and (max-width: 1372px){
+  .center{
+    width:70%;
+  }
+  .right{
+    width:30%;
+  }
+  .text7{
+    display: block;
+    width:100%;
+    margin-left:2px;
+  }
+  .text7 .tone{
+    font-size:8px;
+    margin-left: 3px;
+    display: block;
+  }
+  .li2{
+    font-size:10px;
+  }
+  .ord {
+    font-size:8px;
+    display: block;
+    padding-bottom: 5px;
+  }
+  .text3 i{
+    width:100%;
+    padding-right:5px;
+    margin-left:2px;
+  }
+  video{
+    width:120px;
+  }
+  .text5 .one{
+    font-size:12px;
+  }
+  .text5 .two{
+    font-size: 10px;
+  }
+  .three button{
+    font-size:10px;
+    height:20px;
+  }
+  .text5{
+    display: block;
+    width:100%;
+    margin-left: 2px;
+  }
+  .text5 .tone{
+    font-size:12px;
+  }
+  .text7 .tone{
+    font-size: 12px;
+  }
+  .text7 .ttwo{
+    font-size: 10px;
+  }
+  .tthree button{
+    font-size:10px;
+    height:20px;
+  }
+  .text8 .bone{
+    font-size: 12px;
+  }
+  .text8 .btwo{
+    margin-right:10px;
+    font-size: 10px;
+  }
+  .bthree button{
+    margin-top:3px;
+    height:20px;
+    font-size: 10px;
+  }
+  .text9 .btn{
+    width:100%;
+  }
+  .text9 .btn:hover + .list {
+    display: block;
+    background-color:white ;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+  }
+  .rfive .total{
+    margin-bottom:2px;
+    margin-top:3px;
+    font-size:12px;
+    display: inline;
+    padding-right: 8px;
+   }
+   .rfive .to{
+    margin:auto;
+    margin-right: 0;
+   }
+   .r4 .rsix{
+    padding-top:15px;
+   }
+  .rseven .total{
+    margin-bottom:2px;
+    margin-top:3px;
+    font-size:12px;
+   }
+   .rseven .to{
+    margin:auto;
+    margin-right: 0;
+   }
+   .r5 .reight{
+    padding-top:15px;
+   }
+ }
+ @media only screen and (max-width: 425px){
+ .text9{
+  padding:5px;
+ }
+  .btn{
+    margin:0;
+    width:100%;
+  }
+  .dropdown1{
+    position:relative;
+   display: inline;
+
+  }
+  .text9 .btn2{
+    width:100%;
+  }
+ .b4 .text4{
+    display: block;
+    width: 100%;
+ }
+  
+
+ }
+
+

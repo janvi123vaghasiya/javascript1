@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>page 3 </title>
+        <link rel="stylesheet" href="page2.css">
+       
+        <script src="https://kit.fontawesome.com/5a2837e73b.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+        <header>
+           
+            
+            <div class="main_header">
+            <div class=" col-2 d1">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="col-3 nav1">
+                <ul>
+                    <li ><i class="fa-solid fa-house"></i> Home</li>
+                        <li><i class="fa-solid fa-laptop"></i> Orders</li>
+                        <div class="dd">
+                        <li><i class="fa-solid fa-tags"></i> Products</li>
+                        <div class="pro">
+                            <p>Inventory</p>
+                            <p>Transfers</p>
+                            <p>Collections</p>
+                            <p>Gift cards</p>
+                            
+                        </div>
+                        </div>
+                        <li><i class="fa-solid fa-person"></i> Customers</li>
+                        <li><i class="fa-solid fa-chart-simple"></i> Analytics</li>
+                        <li><i class="fa-solid fa-bullseye"></i> Marketing</li>
+                        <li><i class="fa-solid fa-percent"></i> Discounts</li>
+                        <li><i class="fa-brands fa-app-store"></i> Apps</li>
+                </ul><br>
+                <div class="item1">
+                    <span class="item_001">Sales channels</span><span class="icon"><i class="fa-solid fa-circle-plus"></i></span>
+                    </div><br>
+                    <div class="dropdown">  
+                    <span class="h1"><i class="fa-solid fa-store"></i> Online Store</span> 
+                    <div class="item">
+                        <div class="dropdown">
+                    </div>
+                        <p>Themes</p>
+                        <p>Blog posts</p>
+                        <p>Pages</p>
+                        <p>Navigation</p>
+                        <p>Preferences</p>
+                    </div>
+                    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <div class="set">
+                        <ul>
+                            <li><i class="fa-solid fa-gear"></i>Settings</li>
+                            <button style="background-color:rgb(182, 243, 251);border:1px solid lightskyblue;padding:5px;margin:5px 25px 0 3px;"><i class="fa-solid fa-triangle-exclamation"></i> store transfer disabled </button>
+                        </ul>
+                    </div>
+            </div>
+
+            <div class="col-4 img_01">
+                <img src="317261b82650a68141f98ad2b08254b653aaff9e2404558fe47747da00293df5 (1).svg">
+      
+            </div>
+           <div class="col-4 header_search">
+                     <div class="rel">
+                        <i class="fa-solid fa-magnifying-glass" ></i>
+                        <input type="search" placeholder="Search">
+                    </div>
+            </div>    
+            <div class="col-4 end">
+              <h1> <span>JV</span></h1><h2>Janvi Vaghasiya</h2>
+             </div>    
+           </div> 
+            
+        </header>
+
+        <div class="main">
+            <div class="col-2 nav">
+                <ul>
+                    <li onclick="home()"><i class="fa-solid fa-house"></i> Home</li>
+                        <li onclick="order()"><i class="fa-solid fa-laptop"></i> Orders</li>
+                        <div class="dd">
+                        <li onclick="product()"><i class="fa-solid fa-tags"></i> Products</li>
+                        <div class="pro">
+                            <p>Inventory</p>
+                            <p>Transfers</p>
+                            <p>Collections</p>
+                            <p>Gift cards</p>
+                            
+                        </div>
+                        </div>
+                        <li onclick="Customers()"><i class="fa-solid fa-person"></i> Customers</li>
+                        <li onclick="analytics()"><i class="fa-solid fa-chart-simple"></i> Analytics</li>
+                        <li onclick="market()"><i class="fa-solid fa-bullseye"></i> Marketing</li>
+                        <li onclick="discount()"><i class="fa-solid fa-percent"></i> Discounts</li>
+                        <li onclick="apps()"><i class="fa-brands fa-app-store"></i> Apps</li>
+                </ul><br>
+                
+                <div class="item1">
+                    <span class="item_001" >Sales channels</span><span class="icon1"><i class="fa-solid fa-circle-plus"></i></span>
+                    </div><br> 
+                    <div class="dropdown">  
+                        <span class="h1"><i class="fa-solid fa-store"></i> Online Store</span> 
+                        <div class="item">
+                            
+                            <p>Themes</p>
+                            <p>Blog posts</p>
+                            <p>Pages</p>
+                            <p>Navigation</p>
+                            <p>Preferences</p>
+                        </div>
+                        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    
+                    <div class="set">
+                        <ul>
+                            <li><i class="fa-solid fa-gear"></i>Settings</li>
+                            <button style="background-color:rgb(182, 243, 251);border:1px solid lightskyblue;padding:5px;margin:5px 25px 0 3px;"><i class="fa-solid fa-triangle-exclamation"></i> store transfer disabled </button>
+                        </ul>
+                    </div>
+                </div>
+                <div id="home"></div>
+                <div id="customer"></div>
+                <div id="analytics"></div>
+                <div id="market"></div>
+                <div id="discount"></div>
+                <div id="apps"></div>
+                <div class=" col-10 center" id="order">
+               <div id="product">
+                <div class="line1">
+                    <div class="col-5 left">
+                        <p>Products</p>
+                    </div>
+                   
+                    <div class="col-7 right">
+                        <button class="dot"><i class="fa-solid fa-ellipsis"></i></button>
+                        <div class="ex">Export</div>
+                         <div class="im">Import</div>
+                          <div class="mor">More actions <span style="font-size:10px;">&#9660;</span>
+                        </div>
+        <button class="pro" name="redirect" onclick="btn()">Add Products</button>
+                    </div>
+
+                </div>
+                
+               <div class="box">
+                <div class="b1">
+                    <div class="list">
+                        <div class="all" onclick="alllist()">All</div>
+                        <div class="act" id="act" onclick="active()" >Active</div>
+                        <div class="dra" id="dra" onclick="draft()">Draft</div>
+                        <div class="arch" onclick="archived()">Archived</div>
+                    </div>
+
+                </div>
+                <div class="b2">
+                    <div class=" search">
+                        <i class="fa-solid fa-magnifying-glass" ></i>
+                        <input type="search" placeholder="Search">
+                       
+                    </div>
+                    <div class="btn-group">
+                        <select class="bt1"><option><b> Product Vender </b></option></select>
+                        <select class="bt2"><option><b> Tagged Width </b></option></select>
+                        <select class="bt3"><option><b> Status </b></option></select>
+                        <select class="bt4"><option><b>more filters</b></option></select>
+                        <button class="star" disabled><i class="fa-solid fa-star"></i></button>
+                        <button class="sort"><b><i class="fa-solid fa-arrows-up-down"></i> sort</b> </button>
+                    </div>
+                </div>
+                    <div class="product_title">
+                        <select class="data">
+                         <option value="product title A-Z">product title A-Z</option>
+                         <option value="product title Z-A">product title Z-A</option>
+                         <option value="product type A-Z">product type A-Z</option>
+                        </select> 
+                        <button class="selectbtn">select</button>
+                     </div>
+                   
+                    
+                   
+               
+                <!-- <div class="b3">
+                    <table>
+                        <tr>
+                            <th><input type="checkbox"></th>
+                            <th></th>
+                            <th>Product</th>
+                            <th>Status</th>
+                            <th>inventory</th>
+                            <th>Type</th>
+                            <th>vendor</th>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check"></td>
+                            <td class="icon"><img class="img1" src="1.webp" style="object-fit:cover; width:50%; height:30px ;border:1px solid lightgray;padding:1px;"></td>
+                            <td>1045 Product</td>
+                            <td><button>Active</button></td>
+                            <td class="inve">inventory not tracked</td>
+                            <td class="num1">1045</td>
+                            <td class="num">1045 product</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox"class="check"></td>
+                            <td class="icon"><img src="2.webp" style="object-fit:cover; width:50%; height:35px;border:1px solid lightgray;padding:1px;"></td>
+                            <td>1046 Product</td>
+                            <td><button>Active</button></td>
+                            <td class="inve">inventory not tracked</td>
+                            <td class="num1">1046</td>
+                            <td class="num">1046 product</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check"></td>
+                            <td class="icon"><img src="3.webp" style="object-fit:cover; width:50%; height:35px;border:1px solid lightgray;padding:1px;"></td>
+                            <td>1047 Product</td>
+                            <td><button>Active</button></td>
+                            <td class="inve">inventory not tracked</td>
+                            <td class="num1">1047</td>
+                            <td class="num">1047 product</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check"></td>
+                            <td class="icon"><img src="4.webp" style="object-fit:cover; width:50%; height:35px;border:1px solid lightgray;padding:1px;"></td>
+                            <td>1048 Product</td>
+                            <td><button>Active</button></td>
+                            <td class="inve">inventory not tracked</td>
+                            <td class="num1">1048</td>
+                            <td class="num">1048 product</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check"></td>
+                            <td class="icon"><img src="4.webp" style="object-fit:cover; width:50%; height:35px;border:1px solid lightgray;padding:1px;"></td>
+                            <td>1049 Product</td>
+                            <td><button>Active</button></td>
+                            <td class="inve">inventory not tracked</td>
+                            <td class="num1">1049</td>
+                            <td class="num">1049 product</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" class="check"></td>
+                            <td class="icon"><img src="3.webp" style="object-fit:cover; width:50%; height:35px;border:1px solid lightgray;padding:1px;"></td>
+                            <td>1050 Product</td>
+                            <td><button>Active</button></td>
+                            <td class="inve">inventory not tracked</td>
+                            <td class="num1">1050</td>
+                            <td class="num">1050 product</td>
+                        </tr>
+                    </table>
+                </div> -->
+                <div id="ch" style="display:none">
+                   <input type="checkbox" id="chkboxtitle" > <span id="chtext">0 selected </span>
+                </div>
+                <div id="table"> 
+                </div>
+                
+                <div id="draft">
+                </div>
+                <div id="link">
+                </div>
+                <div id="archived">
+                </div>
+                <div id="archivedlink">
+                </div>
+
+                <div class="b5">
+                <div class="le"><i class="fa-solid fa-angle-left"></i></div><div class="ri"> <i class="fa-solid fa-angle-right"></i></div>
+               </div> 
+               
+            
+            </div> 
+
+            <div class="last">Learn more about <span style="color:blue;text-decoration:underline;"> Products</span></div>
+               
+               
+            </div>
+
+            
+        
+        
+        </div>
+        
+         <script src="page2.js"></script>
+    </body> 
+
+
+</html>

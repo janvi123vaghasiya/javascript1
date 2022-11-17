@@ -1,0 +1,393 @@
+
+
+
+
+<select class="without-icon" style="width:90%;border: 1px solid lightgray;border-radius:5px;" id="vender"onkeyup="myvender('ven')"  placeholder="serach-types">
+    <div class="item">
+    <option selected="true" style='display: none'></option>
+    <option>Animals & Pet Supplies</option>
+    <option>Apparel & Accessories</option>
+    <option>Business & Industrial</option>
+    <option>Baby & Toddler</option>
+    <option>Cameras & Optics</option>
+    <option>Electronics</option>
+    <option>Health & Beauty</option>
+  </div>
+</select>
+
+  
+
+  
+
+
+function drop1(){
+  var d=document.getElementById('drop');
+  var displaytext=d.lists[d.selectedIndex].text;
+  document.getElementById('txtvalue').value = displaytext;
+}
+
+function select(){
+  document.getElementById("drop").style.display="block";
+ 
+}
+
+
+<h3 style="font-size:14px;">vender</h3>
+              <input style="width:90%;border: 1px solid lightgray;border-radius:5px" type="text"
+                data-bs-toggle="dropdown" id="ven">
+              <ul class="one dropdown-menu mt-3" style="padding:10px ;" id="items">
+                <li>Animals $ Pet Supplies</li>
+                <li>Business $ Industrial</li>
+                <li>Cameras $ Optics</li>
+                <li>Electronics</li>
+                <li>Food, Beverages Tobacco</li>
+                <li>Health Beauty</li>
+                <li>Luggage Bags</li>
+                <hr>
+                <li><i class="fa-sharp fa-solid fa-circle-plus"></i>Add</li>
+              </ul>
+              <div id="ven">
+
+              </div>
+              <script>
+                for (var i = 0; i < list.length; i++) {
+                  list[i].onclick = function () {
+                    document.getElementById("ven").value = this.innerHTML;
+                  };
+                }
+              </script>
+var list = document.querySelectorAll("#items li");
+for (var i = 0; i < list.length; i++) {
+  list[i].onclick = function() {
+    document.getElementById("ven").value = this.innerHTML;
+  };
+}
+
+
+<div class="type">
+  <label>Type</label>
+</div>
+<div class="types" >
+  <input  type="text"  data-bs-toggle="dropdown"  id="tvalue" >
+  <ul id="drop"  style="cursor:pointer" class="one dropdown-menu mt-3">
+  <li >Animals & pet supplies</li>
+  <li>Baby & toddler</li>
+  <li>Business & Industrial</li>
+  <li>Cameras & Optics</li>
+  
+  </ul>
+</div>
+
+var list= document.querySelectorAll("#drop li");
+for( var i = 0; i < list.length; i++){
+    list[i].onclick =function(){
+        document.getElementById("tvalue").value = this.innerHTML;
+    };
+}
+
+
+.types ul{
+  display: none;
+
+}
+
+var list= document.querySelectorAll("#drop li");
+for( var i = 0; i < list.length; i++){
+    list[i].onclick =function(){
+        document.getElementById("tvalue").value = this.innerHTML;
+    };
+}
+var list = document.querySelectorAll("#items li");
+for (var i = 0; i < list.length; i++) {
+  list[i].onclick = function () {
+    document.getElementById("ven").value = this.innerHTML;
+  };
+}
+
+function select(){
+    document.getElementById("drop").style.display="block";
+}
+
+
+function find(){
+  cp = document.getElementById("cp").value;
+  sp = document.getElementById("sp").value;
+  if(sp>cp){
+    profit = sp-cp;
+    profit_percentage=(profit/cp)*100;
+    document.getElementById("pl").innerHTML="profit ="+profit;
+    document.getElementById("plp").innerHTML="profit % ="+profit_percentage;
+  }
+}
+
+
+<div class="types" onclick="dropdown()">
+  <div class="select-input">
+      <span class="search" type="text">search types</span>
+  </div>
+  <ul class="options" id="item">
+      <li class="option">
+          <span class="option-text">Animals & pet supplies</span>
+      </li>
+      <li class="option">
+          <span class="option-text">baby & toddler</span>
+      </li>
+      <li class="option">
+          <span class="option-text">Business & Industrial</span>
+      </li>
+      <li class="option">
+          <span class="option-text">Cameras & Optics</span>
+      </li>
+  </ul>
+
+</div>
+
+
+<label style="font-size:14px ;" for="tag-ip">Tags</label>
+              <input style="width:90%;border: 1px solid lightgray;border-radius:5px" type="text" id="tag">
+
+
+
+
+              <i class="fa-sharp fa-solid fa-circle-plus" ></i> Add <li id="add"></i>
+
+var index = students.length; // define leghth
+    const student = {
+      id: Date.now(),
+      Title: document.getElementById('exampleInputEmail1').value,
+      Dicription: document.getElementById('exampleFormControlTextarea1').value,
+      gender: document.querySelector('input[id="bbb"]:checked').value,
+      sel: document.querySelector('input[id="myChe"]:checked').value,
+      vender: document.getElementById('ven').value,
+      collection: document.getElementById('coll').value,
+      tags: document.getElementById('tags').value,
+    };
+    students[index] = student;
+    const jsonObj = JSON.stringify(students);
+    console.log(jsonObj);
+    localStorage.setItem("students", jsonObj);
+  }
+}
+
+
+const urlSearchParams = new URLSearchParams(window.location.search);
+  const params = Object.fromEntries(urlSearchParams.entries());
+  let productId = params.id;
+
+  
+
+
+  // const urlSearchParams = new URLSearchParams(window.location.search);
+  // const params = Object.fromEntries(urlSearchParams.entries());
+  // let productId = params.id;
+
+
+
+
+
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  const params = Object.fromEntries(urlSearchParams.entries());
+  let productId = params.id;
+  if (productId) {
+    let update = JSON.parse(localStorage.getItem('students'));
+    for (var i = 0; i < update.length; i++) {
+      if (update[i].id == productId) {
+        update[i].Title = document.getElementById('exampleInputEmail1').value;
+        update[i].Dicription = document.getElementById('exampleFormControlTextarea1').value;
+        update[i].gender = document.getElementById('bbb').value;
+        update[i].vender = document.getElementById('ven').value;
+        update[i].collection = document.getElementById('coll').value;
+        update[i].tags = document.getElementById('tags').value;
+        localStorage.students = JSON.stringify(update);
+        break;
+       }
+    }
+  }
+
+
+
+
+
+
+  // window.location.href = "page2.html";
+  // window.addEventListener('load',()=>{
+  // const Params = (new URL(document.location)).searchParams;
+  // const Title=Params.get('title');
+  // const textarea=Params.get('textarea');
+  // const active=Params.get('active');
+  // const checkbox=Params.get('checkbox');
+  // const txt=Params.get('txt');
+  // const txt1=Params.get('txt1');
+  
+  // document.getElementById('title').innerHTML = Title;
+  // document.getElementById('textarea').innerHTML = textarea;
+  // document.getElementById('active').innerHTML = active;
+  // document.getElementById('checkbox').innerHTML = checkbox;
+  // document.getElementById('txt').innerHTML = txt;
+  // document.getElementById('txt1').innerHTML = txt1;
+  // });
+  
+  // //    getting value for local to table
+
+
+
+// Insert
+
+// function insert(readData){
+//     var row = table.insertRow();
+//     var cell1 = row.insertCell(0);
+//     var cell2 = row.insertCell(1);
+//     var cell3 = row.insertCell(2);
+//     var cell4 = row.insertCell(3);
+//     var cell5 = row.insertCell(4);
+//     var cell6 = row.insertCell(5);
+
+//   cell1.innerHTML= readData[0];
+//   cell2.innerHTML= readData[1];
+//   cell3.innerHTML= readData[2];
+//   cell4.innerHTML= readData[3];
+//   cell5.innerHTML= readData[4];
+//   cell6.innerHTML= readData[5];
+  
+
+// }
+
+
+
+
+  <tbody>
+    ${createTable(data)}
+    </tbody>
+
+
+    <td><a><button class="btn btn-outline-secondary" onclick="Edit_product('${d1.id}');">Edit</button></a>
+      // <button class="btn btn-outline-secondary" id="dlt" onclick="deleteData('${d1.id}');" >Delete</button>
+      // </td>
+
+    let chkbox =document.querySelectorAll("#chkbox");
+chtext=document.querySelector("chtext");
+if(chkbox &&  chkbox.length > 0){
+    chtext.innerText=`${chkbox.length}`
+}else{
+    console.log("invalid");
+}
+
+onclick="editbutton('${d1.id}')
+
+onclick="deletebutton('${d1.id}')
+
+location.reload();
+let json_object = JSON.parse(localStorage.getItem("itemdata"));
+let take_id = id;
+let obj1 = json_object.find((obj, index) => {
+  if (obj.id == take_id) {
+    let a = obj;
+    a.index = index;
+    return a;
+  }
+})
+
+function edit() {
+  const urlSearchParams = new URLSearchParams(window.location.search);
+  const params = Object.fromEntries(urlSearchParams.entries());
+  let products = JSON.parse(localStorage.getItem('students'));
+  for (var i = 0; i < products.length; i++) {
+    if (products[i].id == productId) {
+      document.getElementById('exampleInputEmail1').value = products[i].Title;
+      document.getElementById('exampleFormControlTextarea1').value = products[i].Dicription;
+      // document.getElementById('myChe').checked = products[i].sel;
+      document.getElementById('ven').value = products[i].vender;
+      document.getElementById('coll').value = products[i].collection;
+      document.getElementById('tags').value = products[i].tags;
+      var status =
+    }
+  }
+}
+
+
+location.href="page1.html?id="+ clickid ;
+    const urlSearchParams = new URLSearchParams(window.location.search);
+    const params = Object.fromEntries(urlSearchParams.entries());
+    let dataitemId = params.id;
+    let dataitem = JSON.parse(localStorage.getItem('itemdata'));
+   
+
+    if (productid) {
+      let update = JSON.parse(localStorage.getItem('itemdata'));
+      for (var i=0; i<update.length;i++) {
+        if (update[i].id == productid) {
+          update[i].Title = document.getElementById('title').value;
+          update[i].discription = document.getElementById('textarea').value;
+          update[i].active = document.getElementById('active').value;
+          update[i].select = document.getElementById('checkbox').value;
+          update[i].vender = document.getElementById('txt').value;
+          update[i].tags = document.getElementById('txt1').value;
+          localStorage.itemdata = JSON.stringify(update);
+          break;
+         }
+      }
+    }
+
+    var chkk = document.querySelectorAll('input[name="chk"]');
+      for(k = 0; k < chkk.length; k++)
+     {
+        if(chkk[k]==product.sel[i]))
+        {
+         product.sel[i].checked = true;
+        }
+     }
+
+     function showchecked(){
+      document.getElementById("ch").style.display = "block";
+         
+          selected.innerHTML=document.querySelectorAll('input[id="chkbox"]:checked').length + " " + "selected";
+      
+      }
+      
+      document.querySelectorAll("input[id='chkbox']").forEach(i =>{
+          i.onclick = () => showchecked() ;
+             
+      })
+
+      // dataitem.filter((act) =>{
+        //     if(act == dataitem){
+        //          return  dataitem.style.display = "block";
+        //     }
+        //    console.log(act == dataitem)
+        // })
+    
+        // act.filter(check);
+        // function check(activedata){
+        //     if(activedata == dataitem){
+        //         return  dataitem.style.display = "block";
+        //    }
+        //    console.log(act);
+        // }
+          
+        // 
+
+        function active(){
+
+
+          var dataitem=JSON.parse(localStorage.getItem("itemdata"))
+         console.log(dataitem);
+         const actdata =document.getElementById("act").innerHTML;
+         
+         
+            var selectdata = dataitem.filter((activedata) =>{
+          //   function act(activedata){
+             // console.log(activedata.active)
+            
+             console.log(activedata.active == actdata)
+             return activedata.active == actdata;
+      //    }
+            })
+          
+         // console.log(actdata);
+         localStorage.setItem("itemdata",JSON.stringify(selectdata))
+         //  console.log(JSON.stringify(selectdata))
+         location.reload();
+         
+         // }
+         }
+     

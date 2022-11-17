@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/d3e168c428.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+          crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/562d58da61.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+          integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+          
+        
+       
+        <title>JS page</title>
+        <link rel="stylesheet" href="page1.css">
+    </head>
+    
+    <body>
+       
+        <header>
+            <div class="main_header">
+                <div class="  d1">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="col-4 nav1">
+                    <ul>
+                        <li><i class="fa-solid fa-house"></i> Home</li>
+                            <li><i class="fa-solid fa-laptop"></i> Orders</li>
+                            <div class="dd">
+                            <li><i class="fa-solid fa-tags"></i> Products</li>
+                            <div class="pro">
+                                <p>Inventory</p>
+                                <p>Transfers</p>
+                                <p>Collections</p>
+                                <p>Gift cards</p>
+                                
+                            </div>
+                            </div>
+                            <li><i class="fa-solid fa-person"></i> Customers</li>
+                            <li><i class="fa-solid fa-chart-simple"></i> Analytics</li>
+                            <li><i class="fa-solid fa-bullseye"></i> Marketing</li>
+                            <li><i class="fa-solid fa-percent"></i> Discounts</li>
+                            <li><i class="fa-brands fa-app-store"></i> Apps</li>
+                    </ul><br>
+                    <div class="item1">
+                        <span class="item_001">Sales channels</span><span class="icon"><i class="fa-solid fa-circle-plus"></i></span>
+                        </div><br>
+                        <div class="dropdown">  
+                        <div class="online"><i class="fa-solid fa-store"></i> Online Store</div> 
+                        <div class="item">
+                            <div class="dropdown">
+                        </div>
+                            <p>Themes</p>
+                            <p>Blog posts</p>
+                            <p>Pages</p>
+                            <p>Navigation</p>
+                            <p>Preferences</p>
+                        </div>
+                        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <div class="set">
+                            <ul>
+                                <li><i class="fa-solid fa-gear"></i>Settings</li>
+                                <button style="background-color:rgb(182, 243, 251);border:1px solid lightskyblue;padding:5px;margin:5px 25px 0 3px;"><i class="fa-solid fa-triangle-exclamation"></i> store transfer disabled </button>
+                            </ul>
+                        </div>
+                </div>
+
+                <div class="col-3 img_01">
+                    <img src="https://cdn.shopify.com/shopifycloud/web/assets/v1/f5416ec27e17f00a67f8c2d6603088baa6635c7bc2071b4f6533c8d260fc8644.svg">
+
+                </div>
+                <div class="col-7 text ">
+                    <p>Unsaved product</p>
+                </div>
+                <div class="col-2 btn">
+                    <button class="btn1">Discard</button>
+                    <button class="btn2" onclick="addData()">Save</button>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="col-2 nav">
+                <ul>
+                    <li><i class="fa-solid fa-house"></i></a> Home</li>
+                        <li><i class="fa-solid fa-laptop"></i> Orders</li>
+                        <div class="dd">
+                        <li><i class="fa-solid fa-tags"></i> Products</li>
+                        <div class="pro">
+                            <p>Inventory</p>
+                            <p>Transfers</p>
+                            <p>Collections</p>
+                            <p>Gift cards</p>
+                            
+                        </div>
+                        </div>
+                        <li><i class="fa-solid fa-person"></i> Customers</li>
+                        <li><i class="fa-solid fa-chart-simple"></i> Analytics</li>
+                        <li><i class="fa-solid fa-bullseye"></i> Marketing</li>
+                        <li><i class="fa-solid fa-percent"></i> Discounts</li>
+                        <li><i class="fa-brands fa-app-store"></i> Apps</li>
+                </ul><br>
+                
+                <div class="item1">
+                    <span class="item_001" >Sales channels</span><span class="icon1"><i class="fa-solid fa-circle-plus"></i></span>
+                    </div><br> 
+                    <div class="ddo">  
+                        <span class="online"><i class="fa-solid fa-store"></i> Online Store</span> 
+                        <div class="item">
+                            
+                            <p>Themes</p>
+                            <p>Blog posts</p>
+                            <p>Pages</p>
+                            <p>Navigation</p>
+                            <p>Preferences</p>
+                        </div>
+                        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    
+                    <div class="set">
+                        <ul>
+                            <li><i class="fa-solid fa-gear"></i>Settings</li>
+                            <button style="background-color:rgb(182, 243, 251);border:1px solid lightskyblue;padding:5px;margin:5px 25px 0 3px;"><i class="fa-solid fa-triangle-exclamation"></i> store transfer disabled </button>
+                        </ul>
+                    </div>
+            </div>
+
+            <div class="col-10 center">
+
+                  
+                    <div class="line1">
+                       <button> <i class="fa-solid fa-arrow-left" onclick=btn1()></i></button><p>Add product</p>
+                    </div>
+                    <div class>
+                        <form autocomplete="off" method="post"></form>
+                            <div class="all">
+                                <div class="col-7 left">
+                                    <div class="top">
+                                        <div class="top1">
+                                            <div class="title" >
+                                                <label>Title</label>
+                                            </div>
+                                            <div class="input">
+                                                <input type="text" name="title" id="title" placeholder="Short sleeve t-shirt" >
+                                            </div>
+                                        </div>
+
+                                        <div class="top2">
+                                            <div class="des">
+                                                <label>Description</label>
+                                            </div>
+                                            <div class="tarea">
+                                                <input type="text" id="textarea" autocomplete="off">
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="price">
+                                        <div class="p1">
+                                            <div class="pri">
+                                                <label>Pricing</label>
+                                            </div>
+                                            <div class="li1">
+                                                <div class="l2">
+                                                <div class="d1">
+                                                    <label>Price</label>
+                                                </div>
+                                                <div class="rupees">
+                                                    <input type="text" id="price"  name="price" placeholder="0.00" >  
+                                                </div>
+                                                </div>
+                                                
+                                               
+                                            <div class="l3">
+                                                <div class="d2">
+                                                    <label>Compare at price</label>
+                                                </div>
+                                                <div class="rupees">
+                                                    <input type="text" id="rupees" name="price" placeholder="0.00" > 
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="l4">
+                                            <input type="checkbox" id="check"><label for="check">Charge text on this product</label>
+                                        </div>
+
+                                    </div>
+                                    <div class="p2">
+                                    <div class="cost">
+                                        <label>Cost per item</label>
+                                    </div>
+                                    <div class="dollar">
+                                        <input type="text" id="dollar" name="dollar" placeholder="0.00" onchange="amount()">
+                                    </div>
+                                    <div class="pro">
+                                    <p style="font-size:15px" id="profit"></p>
+                                    <p style="font-size:15px" id="margin"></p>
+                                </div>
+                                    <p>Customers won't see this</p>
+                                </div>
+                                </div>
+
+
+                                    <div class="bottom">
+                                        <div class="bottom1">
+                                            <div class="ship">
+                                                <label>Shipping</label>
+                                            </div>
+                                            <div class="check">
+                                                <input type="checkbox" id="mycheck" onclick="myFunction()"> <label for="myfor">This is a physical product</label>
+                                            </div>
+                                        </div>
+                                            <div class="bottom2" id="box" style="display:none">
+                                                <div class="weight">
+                                                    <label>WEIGHT</label>
+                                                </div>
+                                                <div class="bline">
+                                                    <p>Used to calculate shipping rates at checkout and label prices during fullfillment.see guidelines for estimating product weight.</p>
+                                                </div>
+                                                <div class="wei">
+                                                    <label>Weight</label>
+                                                </div>
+                                                <div class="input">
+                                                    <input type="text" id="text" name="wei" placeholder="0.0">
+                                                    <select name="kg" id="kg" >
+                                                        <option>lb</option>
+                                                        <option>kg</option>
+                                                        <option>oz</option>
+                                                        <option>z</option>
+                                                    </select>
+                                                </div>
+                                                <div class="info">
+                                                    <label>CUSTOMER INFORMATION</label>
+                                                </div>
+                                                <div class="infoline">
+                                                    <p>cutstomers authorities use this information to calculate duties when shipping internationally.shown on printed customs forms.</p>
+                                                </div>
+                                                <div class="country">
+                                                    <label>Country/Region of origin</label>
+                                                </div>
+                                                <div class="select">
+                                                    <select name="country" class="coun" id="country"> 
+                                                        <option>Afghanistan</option>
+                                                        <option>India</option>
+                                                        <option>Belize</option>
+                                                        <option>Brazil</option>
+
+                                                    </select>
+                                                    
+                                                </div>
+                                                <p>in most cases,where the product is manufactured.</p>
+                                                <div class="hs">
+                                                    <label>HS(harmonized system)code</label>
+                                                </div>
+                                                <div class="search">
+                                                    <input type="text" id="search" name="search" placeholder="search or enter a  HS code">
+                                                    <p>manually enter codes that are longer than 6 numbers.</p>
+
+                                                </div>
+
+                                                
+
+                                            </div>
+
+
+                                            <div id="l1" class="line">
+                                                <p>Customer won't enter their shipping address or choose a shipping method when buying this product.</p>
+                                                
+                                            </div>
+                                       
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="col-4 right">
+                                    <div class="rtop">
+                                        <div class="r1">
+                                            <div class="status">
+                                                <label>Product status</label>
+                                            </div>
+                                            <div class="active1">
+                                                <select name="active" id="active">
+                                                    <option>Active</option>
+                                                    <option>Draft</option>
+                         
+                                                </select>
+                                                <p >This product will be available to 2 sales channels.</p>
+                                            </div>
+                                        </div>
+                                        <div class="r2">
+                                            <div class="sales">
+                                                <label>SALES CHANNELS AND APPS</label>
+                                                
+                                            </div>
+                                            <div class="p" style="display:flex" >
+                                                <input type="checkbox" onchange="checkAll(this)" id="checkbox1"><p style="padding-top:10px;">Select All</p>
+                                            </div>
+                                            <div class="checkbox">
+                                                 <input type="checkbox" name="chkbox" value="Online Store" id="checkbox" class="checkbox2" ><label for="checkbox">Online Store</label><br> 
+                                                <input type="checkbox" name="chkbox" value="Point of Sale" id="checkbox" class="checkbox2" ><label for="checkbox">Point of Sale</label><br>
+                                                <input type="checkbox" name="chkbox"  value="Buy Button" id="checkbox" class="checkbox2"><label for="checkbox">Buy Button</label><br>
+                                                <span style="color:blue;">Schedule availability</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="rbottom">
+                                      <div class="rb1">
+                                            <div>
+                                                <label style="font-weight:bold">Product organization</label>
+                                            </div>
+                                            <div class="type">
+                                                <label>Vendor</label>
+                                              </div>
+                                              <div id="search-bar" class="search-bar">
+                                                <input type="text" id="txt"  data-bs-toggle="dropdown" autocomplete="off" placeholder="search">
+                                                <div class="auto-complete">
+                                                <ul id="list"  class="one dropdown-menu " autocomplete="on">
+                                                    <i class="fa-sharp fa-solid fa-circle-plus" ></i><span onclick="addvender()">Add</span>  <li id="ven"></li>
+                                                    <div id="autocompletebox">
+                                                    <li>animals</li>
+                                                    <li>baby</li>
+                                                    <li>bussiness</li>
+                                                    <li>cameras</li>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                     
+                                        
+                                        <div class="type">
+                                            <label>Tags</label>
+                                          </div>
+                                          <div id="search-bar1" class="tag-container">
+                                            
+                                            <input type="text" id="txt1"  data-bs-toggle="dropdown" autocomplete="off" placeholder="search tags" >
+                                           <!-- <div class="print-values"><p id="valueList"></p></div>   -->
+                                           <div id="section">
+                                            <section >
+                                            </section>
+                                            <p id="paragraph">
+                                            </p>
+                                                </div>
+                                            <div class="auto-complete1">
+                                               
+                                            <ul id="list1"  class="one dropdown-menu " autocomplete="on">
+                                                <i class="fa-sharp fa-solid fa-circle-plus" ></i><span onclick="add()" class="addb"> Add </span><li id="add"></li>
+                                                <div id="autocompletebox1">
+                                                <li style="display:flex"><input type="checkbox" value="animals" id="check0" class="checkbox" style="width:7%;" onchange="updateCheckboxStatus(this)"> <label>animals</label></li>
+                                                <li style="display:flex"><input type="checkbox" value="baby" id="check1" class="checkbox" style="width:7%;" onchange="updateCheckboxStatus(this)"> <label>baby</label></li>
+                                                <li style="display:flex"><input type="checkbox" value="bussiness" id="check2" class="checkbox" style="width:7%;" onchange="updateCheckboxStatus(this)"> <label>bussiness</label></li>
+                                                <li style="display:flex"><input type="checkbox" value="cameras" id="check3" class="checkbox" style="width:7%;"onchange="updateCheckboxStatus(this)"> <label>cameras</label></li>
+                                                </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                        </div>
+                                       
+                                        </div>
+                                        <div class="rlast">
+                                            <div class="rl1">
+                                                <div>
+                                                    <label style="font-weight:bold">Online Store</label>
+                                                </div>
+                                                <div class="theme">
+                                                    <label>Theme template</label>
+                                                </div>
+                                                <div class="default">
+                                                    <select name="Default Product" disabled>
+                                                        <option>Default Product</option>
+                                                    </select>
+    
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    
+
+                                </div>
+
+                            </div>
+                
+
+                
+</div>
+           
+            </div>
+            </div> 
+            
+                
+
+         
+        
+    
+        
+
+
+
+
+
+        
+    </body>
+    <script src="page1tag.js"></script>
+    <script src="page1.js"></script>
+</html>
